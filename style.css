@@ -1,0 +1,202 @@
+.page {
+  position: absolute;
+  background-color: rgb(225, 225, 225);
+  border-radius: 50px;
+  height: 790px;
+  width: 750px;
+  overflow: hidden;
+  box-shadow: inset 5px 5px 5px grey;
+}
+
+h1.title {
+  text-align: Center;
+  font-size: 50px;
+  font-family: "Cooper Black";
+  text-transform: uppercase;
+  /*text-decoration: underline;*/
+  margin: 25px;
+  text-shadow: 3px 3px 5px grey;
+  /*border: solid green 10px;*/
+}
+
+#text-container {
+  position: relative;
+  width: 650px;
+  left: 50px;
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+p#text {
+  text-align: center;
+  position: relative;
+  font-family: "arial black", arial;
+  font-size: 25px;
+  color: rgb(200, 200, 200);
+  font-weight: bold;
+}
+
+textarea {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(250, 250, 250);
+  resize: none;
+  outline: none;
+  height: 50px;
+  width: 600px;
+  left: 25px;
+  bottom: 10px;
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+  font-family: sans-serif;
+}
+
+::placeholder {
+  color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+progress {
+  background-color: blue;
+  border-radius: 20px;
+}
+
+::-webkit-progress-bar {
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+
+::-webkit-progress-value {
+  background-color: Black;
+}
+
+#progress-box {
+  position: relative;
+  top: 20px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 75px;
+  width: 200px;
+  height: 50px;
+  left: 100px;
+  text-align: center;
+  box-shadow: 3px 3px 5px grey;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+#bar-text {
+  font-size: 20px;
+  font-family: "Cooper Black";
+  font-weight: bold;
+}
+
+#timer {
+  position: relative;
+  text-align: center;
+  /* font-weight: bold;*/
+  font-size: 35px;
+  bottom: 30px;
+  font-family: "Cooper Black";
+}
+
+#time-box {
+  position: relative;
+  right: 25px;
+  box-shadow: 3px 3px 5px grey;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 75px;
+  height: 50px;
+  width: 200px;
+  padding: 10px;
+  left: 400px;
+  top: -54px;
+  transition: 0.5s;
+}
+
+a:link,
+a:visited {
+  position: relative;
+  background-color: white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  left: 250px;
+  color: black;
+  font-weight: bolder;
+  font-family: "Cooper Black";
+  padding: 25px;
+  border: 2px black solid;
+  border-radius: 75px;
+  box-shadow: 3px 3px 5px grey;
+  font-size: 18px;
+  top: -25px;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: blue;
+  box-shadow: 10px 10px 10px grey;
+}
+
+#time-box:hover {
+  box-shadow: 10px 10px 10px grey;
+}
+
+#progress-box:hover {
+  box-shadow: 10px 10px 10px grey;
+}
+
+#text-container:hover {
+  box-shadow: 10px 10px 10px grey;
+}
+
+#promo:hover {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(105, 105, 105);
+}
+
+b {
+  color: lime;
+  text-decoration: none;
+  quotes: none;
+}
+
+q {
+  color: red;
+  text-decoration: none;
+  quotes: none;
+}
+
+#promo {
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "rockwell condensed", "freestyle script", cursive;
+
+  background-color: rgb(225, 225, 225);
+  border: none;
+  box-shadow: none;
+  position: abolute;
+  top: 150px;
+  left: 275px;
+  font-weight: bolder;
+  text-align: center;
+  /*display: block;*/
+}
+
+#stats {
+  display: hidden;
+}
+
+#words {
+  visibility: hidden;
+}
