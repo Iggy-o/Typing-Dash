@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Typing Test</title>
+		<title>Typing Dash</title>
 		<link rel="stylesheet" type="text/css" href = "style.css"></link>
 		<script src = "main.js"></script>
 	</head>
 	<body>
 		<article class="page">
-			<h1 class="title">
-				Typing Test
-			</h1>
+			<section id="typing">
+				<h1 class="title">
+					Typing Dash
+				</h1>
 
-			<div id="text-container">
-				<p id="text">Lowzy night-frumps vex'd Jack. Q</p>
+				<div id="text-container">
+					<p id="text">Lowzy night-frumps vex'd Jack. Q</p>
 
-				<textarea
-				id="user-input"
-				name="Test"
-				placeholder="Start Typing Here"
-				autofocusd
-				></textarea>
-			</div>
+					<textarea
+					id="user-input"
+					name="Test"
+					placeholder="Start Typing Here"
+					autocomplete="off"
+					autofocus
+					></textarea>
+				</div>
+			</section>
 
-			<article id="stats">
-				<p id = "words">STATS</p>
-
-				<div id = "progress-box">
-					<span id = "bar-text">Completion</span> <br />
+			<section id="stats">
+				<div>
+					<span id = "bar-text">Completion</span>
 					<progress min = "0" max = "100" value = "0" id = "bar"> </progress>
 				</div>
 
-				<div id = "time-box">
+				<div>
 					<p id = "timer">:15</p>
 				</div>
-			</article>
+			</section>
 		</article>
 	</body>
 </html>
