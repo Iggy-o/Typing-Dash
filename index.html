@@ -2,11 +2,15 @@
 <html>
 	<head>
 		<title>Typing Dash</title>
-		<link rel="stylesheet" type="text/css" href = "dist\css/style.min.css"></link>
-		<script src = "main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/dist/compressed/style.min.css" />
 	</head>
 	<body>
-		<article class="page">
+		<section>
+			<h1 id="title">Typing Dash</h1>
+			<button id="initiate">Tap to Begin</button>
+		</section>	
+		
+		<!-- <article class="page">
 			<section id="typing">
 				<h1 class="title">
 					Typing Dash
@@ -14,11 +18,12 @@
 
 				<div id="text-container">
 					<p id="text">Lowzy night-frumps vex'd Jack. Q</p>
-
 					<textarea
 					id="user-input"
 					name="Test"
 					placeholder="Start Typing Here"
+					onfocus="this.placeholder = ''"
+					onblur="this.placeholder = 'enter your text'"
 					autocomplete="off"
 					autofocus
 					></textarea>
@@ -35,6 +40,8 @@
 					<p id = "timer">:15</p>
 				</div>
 			</section>
-		</article>
+		</article> -->
 	</body>
+	<script src="src/page.js"></script>
+	<!-- <script src="src/main.js"></script> -->
 </html>
