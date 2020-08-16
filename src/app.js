@@ -4,7 +4,7 @@ let timer = document.getElementById("timer");
 let text = document.getElementById("text");
 let interface = document.getElementById("interface");
 let colored, paragraphNum, currentLetter, letterCorrect, completion;
-let allowedKeys = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM`1234567890-=~!@#$%^&*()_+[]\;',./{}|:"<>? ";
+let allowedKeys = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM`1234567890-=~!@#$%^&*()_+[]\;',./{}|:<>? ";
 
 //
 document.getElementById("initiate").addEventListener("click", () => {
