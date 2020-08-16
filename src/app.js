@@ -4,7 +4,7 @@ let timer = document.getElementById("timer");
 let text = document.getElementById("text");
 let interface = document.getElementById("interface");
 let colored, paragraphNum, currentLetter, letterCorrect, completion;
-let allowedKeys = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ,.?-";
+let disallowedKeys = "Backspace";
 
 //
 document.getElementById("initiate").addEventListener("click", () => {
@@ -51,7 +51,7 @@ document.getElementById("initiate").addEventListener("click", () => {
 	document.onkeyup = (e) => {
 		let keyPressed = e.key;
 		let paragraphLetter = paragraphs[paragraphNum].split("")[currentLetter];
-		if (allowedKeys.includes(keyPressed) && paragraphLetter != undefined) {
+		if (!(disallowedKeys.includes(keyPressed)) && paragraphLetter != undefined) {
 			colorText = (color) => {
 				colored.splice(currentLetter * 3, 0, `<span style='color: ${color}'>`);
 				colored.splice(currentLetter++ * 3 + 2, 0, "</span>");
