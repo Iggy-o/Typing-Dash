@@ -1,0 +1,103 @@
+body {
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fdf3ce;
+}
+
+body h1, body button {
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  font: 18vw "Arial Black";
+  color: rgba(250, 234, 193, 0.993);
+  text-shadow: 5px 5px 10px #e9e0be, -5px -5px 10px #ffffde;
+  transition-duration: 0.5s;
+}
+
+@media only screen and (orientation: landscape) {
+  body h1, body button {
+    font-size: 18vh;
+  }
+}
+
+body button {
+  margin: 0vw;
+  padding: 2vw;
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  font: 10vw "Arial Black";
+  background: #fdf3ce;
+  box-shadow: 5px 5px 10px #e9e0be, -5px -5px 10px #ffffde;
+  border-radius: 500vh;
+  transition: 0.1s ease-in-out;
+}
+
+@media only screen and (orientation: landscape) {
+  body button {
+    font-size: 10vh;
+  }
+}
+
+body button:hover {
+  box-shadow: 5px 5px 10px rgba(233, 224, 190, 0.8), -5px -5px 10px rgba(255, 255, 222, 0.8);
+  transform: scale(0.975);
+  cursor: pointer;
+}
+
+body button:hover:active {
+  box-shadow: 5px 5px 10px rgba(233, 224, 190, 0.4), -5px -5px 10px rgba(255, 255, 222, 0.4);
+  transform: scale(0.9);
+}
+
+body section {
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  height: 60vh;
+  width: 85vw;
+  color: rgba(211, 194, 151, 0.514);
+  background-color: rgba(126, 123, 106, 0.103);
+  border-radius: 5vh;
+}
+
+body section #timer, body section #text {
+  margin: 0vw;
+  padding: 0vw;
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  font: 10vh "Arial Black";
+}
+
+body section #text {
+  align-items: flex-start;
+  justify-content: center;
+  font: 6vh "Arial Black";
+}
+
+@media only screen and (orientation: portrait) {
+  body section #text {
+    font: 6vw "Arial Black";
+  }
+}

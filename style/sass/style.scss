@@ -2,4 +2,10 @@
 @import "add-ons/variables", "add-ons/mixins";
 
 // Import the modules from the modules folder
-@import "modules/title";
+body {
+	@include preventDefault;
+	@include centerItems;
+	background-color: $background-color;
+	@import "modules/splashscreen";
+	@import "modules/interface";
+}

@@ -1,5 +1,1 @@
-#Ignore all of the Sass compiled CSS files
-*.css
-
-#Also ignore their associated mapping files
-*.map
+#No Ignored Files for now

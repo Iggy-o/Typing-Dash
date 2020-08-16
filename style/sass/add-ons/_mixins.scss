@@ -1,19 +1,28 @@
 @mixin preventDefault {
 	user-select: none;
-	outline: none;
+    outline: none;
+    overflow: hidden;
+    border: none;
 }
 
-@mixin centerItems {
+@mixin centerItems($center-items: true){
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
+    @if $center-items{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @mixin neumorphic-shadow-lite($alpha) {
 	box-shadow: 5px 5px 10px rgba(233, 224, 190, $alpha),
 		-5px -5px 10px rgba(255, 255, 222, $alpha);
+}
+
+@mixin spacing($margin: 0, $padding: 0, $type: vw) {
+    margin: $margin + $type;
+    padding: $padding + $type;
 }

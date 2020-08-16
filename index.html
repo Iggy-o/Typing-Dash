@@ -2,46 +2,20 @@
 <html>
 	<head>
 		<title>Typing Dash</title>
-		<link rel="stylesheet" type="text/css" href="style/dist/compressed/style.min.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Ighoise Odigie" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style/dist/style.min.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/keyboard.png" size="16x16" />
+		<script src="src/data.js" defer></script>
+		<script src="src/app.js" defer></script>
 	</head>
 	<body>
-		<section>
-			<h1 id="title">Typing Dash</h1>
-			<button id="initiate">Tap to Begin</button>
-		</section>	
-		
-		<!-- <article class="page">
-			<section id="typing">
-				<h1 class="title">
-					Typing Dash
-				</h1>
-
-				<div id="text-container">
-					<p id="text">Lowzy night-frumps vex'd Jack. Q</p>
-					<textarea
-					id="user-input"
-					name="Test"
-					placeholder="Start Typing Here"
-					onfocus="this.placeholder = ''"
-					onblur="this.placeholder = 'enter your text'"
-					autocomplete="off"
-					autofocus
-					></textarea>
-				</div>
-			</section>
-
-			<section id="stats">
-				<div>
-					<span id = "bar-text">Completion</span>
-					<progress min = "0" max = "100" value = "0" id = "bar"> </progress>
-				</div>
-
-				<div>
-					<p id = "timer">:15</p>
-				</div>
-			</section>
-		</article> -->
+		<h1 id="title">Typing<br />Dash</h1>
+		<button id="initiate">Tap to Begin</button>
+		<section id="interface">
+			<p id="text"></p>
+			<p id="timer"></p>
+		</section>
 	</body>
-	<script src="src/page.js"></script>
-	<!-- <script src="src/main.js"></script> -->
 </html>

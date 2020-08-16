@@ -1,0 +1,29 @@
+section {
+	@include preventDefault;
+	@include centerItems(false);
+	display: none;
+	height: 60vh;
+	width: 85vw;
+	color: $secondary-font-color;
+	background-color: $element-color;
+	border-radius: $border-rounding;
+	#timer {
+		@include spacing;
+		position: relative;
+		display: flex;
+		height: 100%;
+		width: 100%;
+		align-items: flex-end;
+		justify-content: center;
+		font: $medium-font-size + vh $primary-font;
+	}
+	#text {
+		@extend #timer;
+		align-items: flex-start;
+		justify-content: center;
+		font: $small-font-size + vh $primary-font;
+		@media only screen and (orientation: portrait) {
+			font: $small-font-size + vw $primary-font;
+		}
+	}
+}

@@ -1,14 +1,25 @@
 // Colors
 $background-color: rgb(253, 243, 206);
+$element-color: rgba(126, 123, 106, 0.103);
 
 // Shadows
 $neuomorphic-shadow: 5px 5px 10px rgb(233, 224, 190), -5px -5px 10px rgb(255, 255, 222);
 
 // Fonts
 $primary-font: "Arial Black";
-$primary-font-color: rgb(253, 243, 206);
+$secondary-font: "Arial";
+$old-primary-font-color: rgb(253, 243, 206);
+$primary-font-color: rgba(250, 234, 193, 0.993);
+$secondary-font-color: rgba(211, 194, 151, 0.514);
 $large-font-size: 18;
 $medium-font-size: 10;
-$small-font-size: 5;
+$small-font-size: 6;
+$ultra-small-font-size: 3;
 
+//Transitions
+$title-transition: .5s;
+$button-transition: 0.1s ease-in-out;
+
+//Borders
+$border-rounding: 5vh;
 
