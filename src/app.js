@@ -24,13 +24,14 @@ document.getElementById("initiate").addEventListener("click", () => {
 		gameOver = (timeLeft, waitTime) => {
 			clearInterval(clock);
 			document.getElementById("text").style.display = "none";
+			timer.style.fontSize = "10vw";
 			timer.innerHTML = "Test Complete";
 			let wpm = `WPM: ${((completion/ 5)*(60/ (time - timeLeft))).toFixed(1)}<br>`;
 			let accuracy = `Accuracy: ${((lettersCorrect/ completion)*100).toFixed(1)}%<br>`;
 			let timespent = `Time Spent: ${time - timeLeft}s<br>`;
 			let endText = `<span><u>STATS</u><br><br>${wpm}${accuracy}${timespent}</span>`;
 			setTimeout( () => {
-				timer.style.fontSize = "5vh"
+				timer.style.fontSize = "5vh";
 				timer.innerHTML = "Click To Restart";
 				text.style.display = "flex";
 				text.innerHTML = endText;
@@ -40,7 +41,7 @@ document.getElementById("initiate").addEventListener("click", () => {
 					interface.style.display = "none";
 					timer.innerHTML = "";
 					timer.style.fontSize = "10vh"
-					document.getElementById("title").style.fontSize = "18vh";
+					document.getElementById("title").style.fontSize = "15vh";
 					document.getElementById("initiate").style.display = "flex";
 					interface.removeEventListener("click", reset);
 				};

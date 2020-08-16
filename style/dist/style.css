@@ -18,36 +18,24 @@ body h1, body button {
   outline: none;
   overflow: hidden;
   border: none;
-  font: 18vw "Arial Black";
+  font: 15vh "Arial Black";
   color: rgba(250, 234, 193, 0.993);
   text-shadow: 5px 5px 10px #e9e0be, -5px -5px 10px #ffffde;
   transition-duration: 0.5s;
 }
 
-@media only screen and (orientation: landscape) {
-  body h1, body button {
-    font-size: 18vh;
-  }
-}
-
 body button {
-  margin: 0vw;
-  padding: 2vw;
+  margin: 0vh;
+  padding: 1.5vh;
   user-select: none;
   outline: none;
   overflow: hidden;
   border: none;
-  font: 10vw "Arial Black";
+  font: 7.5vh "Arial Black";
   background: #fdf3ce;
   box-shadow: 5px 5px 10px #e9e0be, -5px -5px 10px #ffffde;
   border-radius: 500vh;
   transition: 0.1s ease-in-out;
-}
-
-@media only screen and (orientation: landscape) {
-  body button {
-    font-size: 10vh;
-  }
 }
 
 body button:hover {
@@ -70,6 +58,9 @@ body section {
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   display: none;
   height: 60vh;
   width: 85vw;
@@ -91,9 +82,10 @@ body section #timer, body section #text {
 }
 
 body section #text {
+  width: 90%;
   align-items: flex-start;
   justify-content: center;
-  font: 6vh "Arial Black";
+  font: 10vh "Arial Black";
 }
 
 @media only screen and (orientation: portrait) {

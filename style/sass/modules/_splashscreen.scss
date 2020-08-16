@@ -1,25 +1,19 @@
 h1 {
 	@include preventDefault;
-	font: $large-font-size + vw $primary-font;
+	font: ($large-font-size - 3) + vh $primary-font;
 	color: $primary-font-color;
 	text-shadow: $neuomorphic-shadow;
 	transition-duration: $title-transition;
-	@media only screen and (orientation: landscape) {
-		font-size: $large-font-size + vh;
-	}
 }
 button {
 	@extend h1;
-	@include spacing(0, 2);
+	@include spacing(0, 1.5, vh);
 	@include preventDefault;
-	font: $medium-font-size + vw $primary-font;
+	font: ($medium-font-size - 2.5) + vh $primary-font;
 	background: $background-color;
 	box-shadow: $neuomorphic-shadow;
 	border-radius: 100*$border-rounding;
 	transition: $button-transition;
-	@media only screen and (orientation: landscape) {
-		font-size: $medium-font-size + vh;
-	}
 	&:hover {
 		@include neumorphic-shadow-lite(0.8);
 		transform: scale(0.975);
