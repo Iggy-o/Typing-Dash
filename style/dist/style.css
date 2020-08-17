@@ -85,11 +85,11 @@ body section #text {
   width: 90%;
   align-items: flex-start;
   justify-content: center;
-  font: 6vh "Arial Black";
+  font: 5.5vh "Arial Black";
 }
 
 @media only screen and (orientation: portrait) {
   body section #text {
-    font: 6vw "Arial Black";
+    font: 5.5vw "Arial Black";
   }
 }

@@ -22,9 +22,9 @@ section {
 		width: 90%;
 		align-items: flex-start;
 		justify-content: center;
-		font: $small-font-size + vh $primary-font;
+		font: ($small-font-size - 0.5) + vh $primary-font;
 		@media only screen and (orientation: portrait) {
-			font: $small-font-size + vw $primary-font;
+			font: ($small-font-size - 0.5) + vw $primary-font;
 		}
 	}
 }
