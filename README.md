@@ -5,7 +5,7 @@
 
 <img src="assets/images/Screenshot 2020-09-14 224135.png" alt="preview" height = "250px">
 
-<sup>No support for backspaces or mobile devices<sup>
+<sub><sup>Currently no support for backspaces or mobile devices<sup><sub>
 
 
 >*Note from the author:*\
