@@ -1,5 +1,5 @@
 # TYPING DASH
-### "An old application reimagined with a new perspective"
+### "How fast can you really type?"
 
 <sup>Currently no support for backspaces or mobile devices<sup>
   
